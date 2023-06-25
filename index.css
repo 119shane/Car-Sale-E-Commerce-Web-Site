@@ -3,6 +3,7 @@
 :root {
     --main_text_color: #000000;
     --secondary_text-color: #565656;
+    --gray_text_color: #686868;
     --blue: #008AD8;
 }
 
@@ -10,11 +11,60 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Lexend Deca', sans-serif;
-    color: var(--main_text_color)
+    color: var(--main_text_color);
+}
+
+.wrapper {
+    padding: 2.5em;
+}
+
+.main_title {
+    font-size: 2em;
+}
+
+.para {
+    font-size: 1.125em;
+    color: var(--secondary_text-color);
+    line-height: 1.4;
+}
+
+.search_bar {
+    margin: 2em 0;
+    height: 1.625em;
+    position: relative
+}
+
+.select_options {
+    padding: .5em;
+    width: 70%;
+    max-width: 260px;
+    max-height: 200px;
+    box-shadow: 0 0 20px rgba(0,0,0,.2)
+}
+
+.select {
+    padding: .2em;
+    margin: .5em
+}
+
+input[type="checkbox"] {
+    margin-right: 1em;
 }
 
 
 
 
 
-/*  */
+
+/*
+input_box
+icon search
+menu
+search_bar
+cars_container
+car_detail
+h2
+car_img
+car_address
+car_price_box
+car_price  */
