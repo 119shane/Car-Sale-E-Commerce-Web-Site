@@ -6,73 +6,123 @@
     </head>
     <body>
         <div class="wrapper">
-            
-            <h1 class="main_title">Available Cars</h1>
-            <p class="para">There are 15 cars that match your criteria</p>
-            
-            <div class="input_box>">
-                <input class="search_bar" type="text"/>
-                <img id="search" class="icon search" src="svg/search.svg" alt="in=mage of search logo"/>
-                <img id="menu" class="icon menu" src="svg/menu.svg" alt="image of a menu logo"/>
-            </div>
-            
-            <div id="select_options" class="select_options">
-                <div class="select">
-                    <input type="checkbox" id="new" />
-                    <label for="new">New cars</label>
-                </div>
-                <div class="select">
-                    <input type="checkbox" id="used" />
-                    <label for="used">Used cars</label>
-                </div>
-                <div class="select">
-                    <input type="checkbox" id="dealer" />
-                    <label for="dealer">Dealership</label>
-                </div>
-                <div class="select">
-                    <input type="checkbox" id="by_owner" />
-                    <label for="by_owner">For sale by owner</label>
-                </div>
-            </div>
-            
-            <div class="cars_container">
+            <header>
                 
-                <div class="car_detail">
-                    <h2>2017 Toyota Highlander V4</h2>
-                    <img class="car_img" alt="image of the 2017 Toyota Highlander V4" src="vehicles/toyota-highlander.jpg" />
-                    <p class="car_address">1944 Scrimba Ln
-Youngstown, OH 44481</p>
-                    <div class="car_price_box">
-                        <p class="car_price">$17,400</p>
-                        <img class="action_emply" src="svg/save.svg" alt="empty heart logo" />
-                        <img class="action_filled" src="svg/save-filled.svg" alt="filled heart logo" />
+               <div class="heading">
+                    <h1 class="main_title">Available Cars</h1>
+                    <p class="para">There are 15 cars that match your criteria</p>   
+               </div> 
+               
+                <div class="options">
+                   
+                    <div class="input_box>">
+                        <input class="search_bar" type="text"/>
+                        <img id="search" class="icon search" src="svg/search.svg" alt="in=mage of search logo"/>
+                        <img id="menu" class="icon menu" src="svg/menu.svg" alt="image of a menu logo"/>
+                    </div>
+            
+                    <div id="select_options" class="select_options">
+                        <div class="select">
+                            <input type="checkbox" id="new" />
+                            <label for="new">New cars</label>
+                        </div>
+                        <div class="select">
+                            <input type="checkbox" id="used" />
+                            <label for="used">Used cars</label>
+                        </div>
+                        <div class="select">
+                            <input type="checkbox" id="dealer" />
+                            <label for="dealer">Dealership</label>
+                        </div>
+                        <div class="select">
+                            <input type="checkbox" id="by_owner" />
+                            <label for="by_owner">For sale by owner</label>
+                        </div>
+                    </div>
+               </div>
+            </header>
+ 
+            <main>
+                <div class="labels">
+                    <p class="lbl-details">Car Details</p>
+                    <p class="lbl-location">Location</p>
+                    <p class="lbl-price">Price</p>
+                    <p class="lbl-action">Action</p>
+                </div>
+                <div class="cars_container">
+                
+                    <div class="car_detail">
+                        <a href="#"><h2>2017 Toyota Highlander V4</h2></a>
+                        <img class="car_img" alt="image of the 2017 Toyota Highlander V4" src="vehicles/toyota-highlander.jpg" />
+                        <p class="car_address">1944 Scrimba Ln<br/>
+    Youngstown, OH 44481</p>
+                        <div class="car_price_box">
+                            <p class="car_price">$17,400</p>
+                            <img class="action_emply" src="svg/save.svg" alt="empty heart logo" />
+                            <img class="action_filled" src="svg/save-filled.svg" alt="filled heart logo" />
+                        </div>
+                    </div>
+                    
+                    <div class="car_detail active">
+                        <a href="#"><h2>2012 Toyota Tundra 4x4</h2></a>
+                        <img class="car_img" alt="image of the 2012 Toyota Tundra 4x4" src="vehicles/toyota-thundra.jpg" />
+                        <p class="car_address">301 Fantasy Dr<br/>
+    Beverly Hills, CA 90210</p>
+                        <div class="car_price_box">
+                            <p class="car_price">$23,900</p>
+                            <img class="action_emply" src="svg/save.svg" alt="empty heart logo" />
+                            <img class="action_filled" src="svg/save-filled.svg" alt="filled heart logo" />
+                        </div>
+                    </div>
+                    
+                    <div class="car_detail">
+                        <a href="#"><h2>2004 Dodge Ram 4x4</h2></a>
+                        <img class="car_img" alt="image of the 2004 Dodge Ram 4x4" src="vehicles/dodge-ram.jpg" />
+                        <p class="car_address">9104 Falsety Ave<br/>
+    AnonyVille, FL 40440</p>
+                        <div class="car_price_box">
+                            <p class="car_price">$7,988</p>
+                            <img class="action_emply" src="svg/save.svg" alt="empty heart logo" />
+                            <img class="action_filled" src="svg/save-filled.svg" alt="filled heart logo" />
+                        </div>
+                    </div>
+                    <div class="car_detail">
+                        <a href="#"><h2>2017 Toyota Highlander V4</h2></a>
+                        <img class="car_img" alt="image of the 2017 Toyota Highlander V4" src="vehicles/toyota-highlander.jpg" />
+                        <p class="car_address">1944 Scrimba Ln<br/>
+    Youngstown, OH 44481</p>
+                        <div class="car_price_box">
+                            <p class="car_price">$17,400</p>
+                            <img class="action_emply" src="svg/save.svg" alt="empty heart logo" />
+                            <img class="action_filled" src="svg/save-filled.svg" alt="filled heart logo" />
+                        </div>
+                    </div>
+                    
+                    <div class="car_detail">
+                        <a href="#"><h2>2012 Toyota Tundra 4x4</h2></a>
+                        <img class="car_img" alt="image of the 2012 Toyota Tundra 4x4" src="vehicles/toyota-thundra.jpg" />
+                        <p class="car_address">301 Fantasy Dr<br/>
+    Beverly Hills, CA 90210</p>
+                        <div class="car_price_box">
+                            <p class="car_price">$23,900</p>
+                            <img class="action_emply" src="svg/save.svg" alt="empty heart logo" />
+                            <img class="action_filled" src="svg/save-filled.svg" alt="filled heart logo" />
+                        </div>
+                    </div>
+                    
+                    <div class="car_detail">
+                        <a href="#"><h2>2004 Dodge Ram 4x4</h2></a>
+                        <img class="car_img" alt="image of the 2004 Dodge Ram 4x4" src="vehicles/dodge-ram.jpg" />
+                        <p class="car_address">9104 Falsety Ave<br/>
+    AnonyVille, FL 40440</p>
+                        <div class="car_price_box">
+                            <p class="car_price">$7,988</p>
+                            <img class="action_emply" src="svg/save.svg" alt="empty heart logo" />
+                            <img class="action_filled" src="svg/save-filled.svg" alt="filled heart logo" />
+                        </div>
                     </div>
                 </div>
-                
-                <div class="car_detail">
-                    <h2>2012 Toyota Tundra 4x4</h2>
-                    <img class="car_img" alt="image of the 2012 Toyota Tundra 4x4" src="vehicles/toyota-thundra.jpg" />
-                    <p class="car_address">301 Fantasy Dr
-Beverly Hills, CA 90210</p>
-                    <div class="car_price_box">
-                        <p class="car_price">$23,900</p>
-                        <img class="action_emply" src="svg/save.svg" alt="empty heart logo" />
-                        <img class="action_filled" src="svg/save-filled.svg" alt="filled heart logo" />
-                    </div>
-                </div>
-                
-                <div class="car_detail">
-                    <h2>2004 Dodge Ram 4x4</h2>
-                    <img class="car_img" alt="image of the 2004 Dodge Ram 4x4" src="vehicles/dodge-ram.jpg" />
-                    <p class="car_address">9104 Falsety Ave
-AnonyVille, FL 40440</p>
-                    <div class="car_price_box">
-                        <p class="car_price">$7,988</p>
-                        <img class="action_emply" src="svg/save.svg" alt="empty heart logo" />
-                        <img class="action_filled" src="svg/save-filled.svg" alt="filled heart logo" />
-                    </div>
-                </div>
-            </div>
+            </main>
         </div>
     <script src="index.js"></script>
     </body>

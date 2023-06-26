@@ -1,22 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 
 :root {
+    --wrapper_bg_color: #F4F4F4;
     --main_text_color: #000000;
     --secondary_text-color: #565656;
     --gray_text_color: #686868;
     --blue: #008AD8;
+    --white: #ffffff;
 }
 
-html, body {
+body {
+    width: 100%;
     margin: 0;
     padding: 0;
     font-family: 'Lexend Deca', sans-serif;
     color: var(--main_text_color);
 }
 
+/* mobile view */
+
 .wrapper {
     padding: 2.5em;
+    background: var(--wrapper_bg_color);
 }
+
+/* header */
 
 .main_title {
     font-size: 2em;
@@ -51,20 +59,87 @@ input[type="checkbox"] {
     margin-right: 1em;
 }
 
+/* main */
+
+.labels {
+    margin: 1em 0;
+    padding: .4em;
+    background: var(--blue);
+    color: var(--white);
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 1fr;
+    display: none;
+}
+
+.lbl-details {
+    font-size: 0.875em;
+}
+
+/* car_details */
+
+.car_detail {
+    padding: 1em;
+}
+
+.active {
+    background: var(--white);
+    border-radius: 6px;
+}
+
+.car_detail h2{
+    color: var(--blue);
+    font-size: 1.375em;
+    line-height: 1.75;
+}
+
+.car_detail a {
+    text-decoration: none;
+}
+
+.car_address {
+    color: var(--gray_text_color);
+    font-size: 1.125em;
+    line-height: 1.27;
+}
+
+.car_price {
+    font-size: 1.5em;
+    line-height: 1.25;
+}
+
+.car_price_box {
+    display: flex;
+    justify-content: space-between
+}
+
+.action_filled {
+    display: none;
+}
+
+/* media queries */
+
+@media (min-width: 800px) {
+    body {
+        color: red;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .options {
+        display: none;
+    }
+    .labels {
+        display: grid;
+    }
+    .car_img {
+        display: none;
+    }
+        .car_detail {
+        display: grid;
+        grid-template-columns: 3fr 2fr 1fr 1fr;
+
+    }
+}
 
 
-
-
-
-/*
-input_box
-icon search
-menu
-search_bar
-cars_container
-car_detail
-h2
-car_img
-car_address
-car_price_box
-car_price  */
