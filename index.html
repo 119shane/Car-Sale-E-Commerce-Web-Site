@@ -3,6 +3,7 @@
     <head>
         <title></title>
         <link rel="stylesheet" href="index.css">
+        <script src="https://kit.fontawesome.com/9c9a7459ba.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -15,10 +16,9 @@
                
                 <div class="options">
                    
-                    <div class="input_box>">
-                        <input class="search_bar" type="text"/>
-                        <img id="search" class="icon search" src="svg/search.svg" alt="in=mage of search logo"/>
-                        <img id="menu" class="icon menu" src="svg/menu.svg" alt="image of a menu logo"/>
+                   <div class="icons">
+                        <input type="text" class="search">
+                        <img src="./svg/menu.svg" class="menu">
                     </div>
             
                     <div id="select_options" class="select_options">
@@ -58,20 +58,18 @@
     Youngstown, OH 44481</p>
                         <div class="car_price_box">
                             <p class="car_price">$17,400</p>
-                            <img class="action_emply" src="svg/save.svg" alt="empty heart logo" />
-                            <img class="action_filled" src="svg/save-filled.svg" alt="filled heart logo" />
+                            <i onclick="changeHeart(this)" class="far fa-heart fa-lg"></i>
                         </div>
                     </div>
                     
-                    <div class="car_detail active">
+                    <div class="car_detail">
                         <a href="#"><h2>2012 Toyota Tundra 4x4</h2></a>
                         <img class="car_img" alt="image of the 2012 Toyota Tundra 4x4" src="vehicles/toyota-thundra.jpg" />
                         <p class="car_address">301 Fantasy Dr<br/>
     Beverly Hills, CA 90210</p>
                         <div class="car_price_box">
                             <p class="car_price">$23,900</p>
-                            <img class="action_emply" src="svg/save.svg" alt="empty heart logo" />
-                            <img class="action_filled" src="svg/save-filled.svg" alt="filled heart logo" />
+                            <i onclick="changeHeart(this)" class="far fa-heart fa-lg"></i>
                         </div>
                     </div>
                     
@@ -82,8 +80,7 @@
     AnonyVille, FL 40440</p>
                         <div class="car_price_box">
                             <p class="car_price">$7,988</p>
-                            <img class="action_emply" src="svg/save.svg" alt="empty heart logo" />
-                            <img class="action_filled" src="svg/save-filled.svg" alt="filled heart logo" />
+                            <i onclick="changeHeart(this)" class="far fa-heart fa-lg"></i>
                         </div>
                     </div>
                     <div class="car_detail">
@@ -93,8 +90,7 @@
     Youngstown, OH 44481</p>
                         <div class="car_price_box">
                             <p class="car_price">$17,400</p>
-                            <img class="action_emply" src="svg/save.svg" alt="empty heart logo" />
-                            <img class="action_filled" src="svg/save-filled.svg" alt="filled heart logo" />
+                            <i onclick="changeHeart(this)" class="far fa-heart fa-lg"></i>
                         </div>
                     </div>
                     
@@ -105,8 +101,7 @@
     Beverly Hills, CA 90210</p>
                         <div class="car_price_box">
                             <p class="car_price">$23,900</p>
-                            <img class="action_emply" src="svg/save.svg" alt="empty heart logo" />
-                            <img class="action_filled" src="svg/save-filled.svg" alt="filled heart logo" />
+                            <i onclick="changeHeart(this)" class="far fa-heart fa-lg"></i>
                         </div>
                     </div>
                     
@@ -117,13 +112,12 @@
     AnonyVille, FL 40440</p>
                         <div class="car_price_box">
                             <p class="car_price">$7,988</p>
-                            <img class="action_emply" src="svg/save.svg" alt="empty heart logo" />
-                            <img class="action_filled" src="svg/save-filled.svg" alt="filled heart logo" />
+                            <i onclick="changeHeart(this)" class="far fa-heart fa-lg"></i>
                         </div>
                     </div>
                 </div>
             </main>
         </div>
     <script src="index.js"></script>
-    </body>   
+    </body>
 </html>

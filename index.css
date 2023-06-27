@@ -10,8 +10,7 @@
 }
 
 body {
-    width: 100%;
-    margin: 0;
+    margin: 1.5em 2em;
     padding: 0;
     font-family: 'Lexend Deca', sans-serif;
     color: var(--main_text_color);
@@ -36,18 +35,52 @@ body {
     line-height: 1.4;
 }
 
-.search_bar {
-    margin: 2em 0;
-    height: 1.625em;
-    position: relative
+.options {
+    position: relative;
 }
 
+.icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.far, .fas {
+    cursor: pointer;
+}
+
+.menu {
+    margin: 0 .5em 1.8em;
+    cursor: pointer;
+}
+
+.search {
+    cursor: pointer;
+    width: 100%;
+    border-radius: 2em;
+    padding: .6em;
+    border: none;
+    outline: none;
+    background: white url('./svg/search.svg') no-repeat right .8em center;
+    margin: .1em 0 2em;
+}
+
+.search:focus {
+    outline: thin dotted;
+}
+
+/* select options ---> fillter */
+
 .select_options {
+    position: absolute;
+    top: 3.5rem;
+    right: 1rem;
+    background: var(--white);
     padding: .5em;
-    width: 70%;
     max-width: 260px;
     max-height: 200px;
-    box-shadow: 0 0 20px rgba(0,0,0,.2)
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+    clip-path: circle(0% at 100% 0%);
+    transition: clip-path 300ms ease-in;
 }
 
 .select {
@@ -67,79 +100,91 @@ input[type="checkbox"] {
     background: var(--blue);
     color: var(--white);
     display: grid;
-    grid-template-columns: 3fr 2fr 1fr 1fr;
+    grid-template-columns: 40% 30% 20% auto;
     display: none;
 }
 
-.lbl-details {
-    font-size: 0.875em;
+.labels p {
+    font-size: 1rem;
 }
 
 /* car_details */
 
 .car_detail {
     padding: 1em;
+    margin: -1em -1em 2em;
 }
 
-.active {
+.car_detail:hover {
     background: var(--white);
-    border-radius: 6px;
 }
 
 .car_detail h2{
     color: var(--blue);
-    font-size: 1.375em;
-    line-height: 1.75;
+    font-size: 1.375rem;
 }
 
 .car_detail a {
     text-decoration: none;
 }
 
+
 .car_address {
     color: var(--gray_text_color);
     font-size: 1.125em;
-    line-height: 1.27;
-}
-
-.car_price {
-    font-size: 1.5em;
-    line-height: 1.25;
+    line-height: 1.75;
+    margin-bottom: 0;
 }
 
 .car_price_box {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    align-items: center;
 }
 
-.action_filled {
-    display: none;
+.car_price {
+    font-size: 1.5em;
 }
 
 /* media queries */
 
-@media (min-width: 800px) {
-    body {
-        color: red;
-    }
+@media (min-width: 900px) {
     header {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1em;
     }
-    .options {
-        display: none;
+    .search, .menu {
+        margin: unset;
     }
     .labels {
         display: grid;
+        margin: unset;
+        margin-bottom: 2em;
+        padding: 0 3em;
     }
     .car_img {
         display: none;
     }
-        .car_detail {
+    .car_detail {
         display: grid;
-        grid-template-columns: 3fr 2fr 1fr 1fr;
-
+        grid-template-columns: 40% 30% auto;
+        margin: 1em 0;
+    }
+    .far, .fas {
+        margin-right: 1em;
+    }
+    .car-location {
+        margin: 0;
+    }
+    .lbl-price{
+        margin-left: 1em;
+    }
+    .lbl-action {
+        margin-left: 2em;
     }
 }
+
 
 
